@@ -26,3 +26,25 @@ document.write(sum);
 }
 var arr=[10, 20, 30, 40];
 sum("Bilal Ahmad", ...arr);
+
+document.write("<br><br>");
+
+// uses of spread Operator in arrays
+
+var arr1= [10,20,30];
+var arr2=[40,50,60];
+var arr3=[...arr1,...arr2];
+document.write("After the use of spread operator the value of the third array is :" + arr3);
+
+// uses of spread operator in objects
+
+var obj1={
+    name: "Bilal",
+};
+
+var obj2={
+    age: 23,
+};
+
+var  obj3={...obj1, ...obj2};
+console.log(obj3);
