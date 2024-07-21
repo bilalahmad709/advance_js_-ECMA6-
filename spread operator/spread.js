@@ -12,3 +12,17 @@ document.write("<p>The spread operator in JavaScript, represented by three dots 
 // const numbers = [1, 2, 3];
 // console.log(sum(...numbers)); // 6
 
+function sum(name, ...args){
+    console.log(arguments);
+
+    document.write(`Hello ${name} :`);
+
+    let sum =0;
+    for(let i in args){
+    sum += args[1];
+}
+
+document.write(sum);
+}
+var arr=[10, 20, 30, 40];
+sum("Bilal Ahmad", ...arr);
